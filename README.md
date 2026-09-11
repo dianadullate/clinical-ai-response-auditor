@@ -125,6 +125,14 @@ Total holdout evaluations:
 | Critical Error agreement between ChatGPT and Claude | 80% | **90%** |
 | Mean score disagreement | 14.725 | **9.375** |
 
+### Validation performance
+
+![Holdout validation results](holdout_validation_v02_vs_v03.png)
+
+### Inter-model consistency
+
+![ChatGPT vs Claude disagreement](holdout_intermodel_disagreement_v02_vs_v03.png)
+
 ### Key result
 
 Mean score disagreement between ChatGPT and Claude decreased by approximately **36%**.
@@ -187,7 +195,6 @@ The project currently includes:
 
 Key files:
 
-- `clinical_ai_audits.csv`
 - `clinical_validation_cases_LOCKED.csv`
 - `holdout_validation_summary.csv`
 - `holdout_validation_detailed_results.csv`
@@ -223,7 +230,7 @@ This is an exploratory project and not a clinically validated medical device.
 Main limitations:
 
 - small validation set
-- reference labels were expert-informed but not independently adjudicated by multiple clinicians
+- The reference labels were based on a pre-specified clinical reference, but were not independently adjudicated by multiple clinicians.
 - only two evaluator models were tested
 - evidence-grounding claims were not yet systematically verified against a controlled source base
 - no prospective clinical deployment
