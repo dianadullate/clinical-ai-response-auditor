@@ -203,6 +203,36 @@ Key files:
 - `holdout_validation_v02_vs_v03.png`
 - `holdout_intermodel_disagreement_v02_vs_v03.png`
 
+## How to reproduce the analysis
+
+The repository includes the data and notebook required to reproduce the holdout analysis reported for rubric v0.3.
+
+### Quick start
+
+1. Clone or download this repository.
+2. Open `Clinical_AI_Response_Auditor_v0_3_PORTFOLIO.ipynb`.
+3. Run the notebook from top to bottom in Google Colab or Jupyter.
+4. The notebook loads the exported holdout results and reproduces:
+   - validation summary metrics
+   - v0.2 vs v0.3 comparison
+   - inter-model disagreement analysis
+   - case-level comparison
+   - validation figures
+
+### Main analysis files
+
+- `clinical_validation_cases_LOCKED.csv` — frozen 10-case holdout set
+- `holdout_validation_detailed_results.csv` — detailed evaluator results
+- `holdout_validation_summary.csv` — aggregate validation metrics
+- `holdout_case_by_case_comparison.csv` — case-level comparison
+- `Clinical_AI_Response_Auditor_v0_3_PORTFOLIO.ipynb` — reproducible analysis notebook
+
+### Reproducibility note
+
+The current public repository reproduces the analysis of the exported holdout results. It does not automatically query ChatGPT or Claude or regenerate the original model evaluations.
+
+This design avoids requiring API credentials and keeps the portfolio version simple and reproducible from the included result files.
+
 ---
 
 ## What this project demonstrates
