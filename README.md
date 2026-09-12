@@ -284,6 +284,7 @@ Planned improvements for a future version:
 9. repeated-run robustness testing
 10. additional evaluator models
 
+See the planned next steps in [ROADMAP_v0_4.md](ROADMAP_v0_4.md).
 ---
 
 ## Current status
